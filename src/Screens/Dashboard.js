@@ -1,5 +1,6 @@
 import React from "react";
 import StatisticsCardChart from "../Components/StatisticsCardChart";
+import UserStatisticsChart from "../Components/UserStatisticsChart";
 
 function StatisticsCard({ stroke, fill }) {
   return (
@@ -38,6 +39,44 @@ function StatisticsCard({ stroke, fill }) {
   );
 }
 
+function UserFrom({ stroke, label }) {
+  return (
+    <div className="user__statistics__card__content__right__from">
+      <div
+        className="user__statistics__card__content__right__from__dot"
+        style={{ backgroundColor: stroke }}
+      ></div>
+      {label}
+    </div>
+  );
+}
+
+function UserStatisticsCard() {
+  return (
+    <div className="user__statistics__card">
+      <div className="user__statistics__card__header">
+        <div className="user__statistics__card__header__heading">
+          User From sites
+        </div>
+        <div className="user__statistics__card__header__date">
+          15 April - 15 May
+        </div>
+      </div>
+      <div className="user__statistics__card__content">
+        <div className="user__statistics__card__content__left">
+          <UserStatisticsChart />
+        </div>
+        <div className="user__statistics__card__content__right">
+          <UserFrom stroke="#6F42C1" label="Facebook" />
+          <UserFrom stroke="#0780FE" label="Instagram" />
+          <UserFrom stroke="#F10075" label="Youtube" />
+          <UserFrom stroke="#01CCCC" label="Google" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Dashboard() {
   return (
     <div className="dashboard__container">
@@ -47,7 +86,9 @@ export default function Dashboard() {
         <StatisticsCard stroke="#6610F2" fill="rgba(111,66,193,.5)" />
         <StatisticsCard stroke="#6610F2" fill="rgba(111,66,193,.5)" />
       </div>
-      <div className="dashboard__container__middle"></div>
+      <div className="dashboard__container__middle">
+        <UserStatisticsCard />
+      </div>
       <div className="dashboard__container__bottom"></div>
     </div>
   );
