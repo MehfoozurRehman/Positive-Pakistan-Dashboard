@@ -15,8 +15,10 @@ function Main() {
   return (
     <div className="main">
       <Header />
-      <Sidebar />
-      <Outlet />
+      <div className="main__container">
+        <Sidebar />
+        <Outlet />
+      </div>
     </div>
   );
 }
@@ -32,7 +34,7 @@ export default function App() {
           <Route path="news" element={<News />} />
           <Route path="news-selection" element={<NewsSelection />} />
           <Route path="topics" element={<Topics />} />
-          <Route path="catagory" element={<Category />} />
+          <Route path="category" element={<Category />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
