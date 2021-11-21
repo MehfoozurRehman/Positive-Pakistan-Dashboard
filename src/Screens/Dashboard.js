@@ -1,6 +1,8 @@
 import React from "react";
 import StatisticsCardChart from "../Components/StatisticsCardChart";
 import UserStatisticsChart from "../Components/UserStatisticsChart";
+import map from "../Assets/map.png";
+import newsPic from "../Assets/newsPic.png";
 
 function StatisticsCard({ stroke, fill }) {
   return (
@@ -77,19 +79,233 @@ function UserStatisticsCard() {
   );
 }
 
+function UserByStats({ labal, value, valueByPercentage, stroke }) {
+  return (
+    <div className="user__by__card__left__stats__entry">
+      <div className="user__by__card__left__stats__entry__header">
+        <div className="user__by__card__left__stats__entry__header__heading">
+          {labal}
+        </div>
+        <div className="user__by__card__left__stats__entry__header__value">
+          {value}
+        </div>
+      </div>
+      <div className="user__by__card__left__stats__entry__bar">
+        <div
+          className="user__by__card__left__stats__entry__bar__filled"
+          style={{ minWidth: valueByPercentage, backgroundColor: stroke }}
+        ></div>
+      </div>
+    </div>
+  );
+}
+function UserByCard() {
+  return (
+    <div className="user__by__card">
+      <div className="user__by__card__left">
+        <div className="user__by__card__left__heading">Users By City</div>
+        <div className="user__by__card__left__info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In maxime
+          placeat obcaecati dignissimos vel veniam? Atque modi amet vel iusto!
+        </div>
+        <div className="user__by__card__left__stats">
+          <UserByStats
+            labal="Punjab"
+            value="12,000"
+            valueByPercentage="65%"
+            stroke="#6F42C1"
+          />
+          <UserByStats
+            labal="Sindh"
+            value="12,000"
+            valueByPercentage="25%"
+            stroke="#0780FE"
+          />
+          <UserByStats
+            labal="KPK"
+            value="12,000"
+            valueByPercentage="55%"
+            stroke="#F10075"
+          />
+          <UserByStats
+            labal="Balochistan"
+            value="12,000"
+            valueByPercentage="88%"
+            stroke="#01CCCC"
+          />
+        </div>
+      </div>
+      <img src={map} alt="map" className="user__by__card__right" />
+    </div>
+  );
+}
+
+function MostViewedNewsCardTableList() {
+  return (
+    <div className="most__viewed__news__card__table__content__list">
+      <div className="most__viewed__news__card__table__content__list__entry">
+        <img
+          src={newsPic}
+          alt="newsPic"
+          className="most__viewed__news__card__table__content__list__entry__img"
+        />
+      </div>
+      <div className="most__viewed__news__card__table__content__list__entry">
+        سندھ میں کیسز میں اضافہ
+      </div>
+      <div
+        className="most__viewed__news__card__table__content__list__entry"
+        style={{ maxWidth: "88px" }}
+      >
+        5
+      </div>
+      <div
+        className="most__viewed__news__card__table__content__list__entry"
+        style={{ maxWidth: "88px" }}
+      >
+        1200
+      </div>
+      <div className="most__viewed__news__card__table__content__list__entry">
+        <StatisticsCardChart stroke="#6F42C1" fill="rgba(111,66,193,.5)" />
+      </div>
+    </div>
+  );
+}
+
+function MostViewedNewsCard() {
+  return (
+    <div className="most__viewed__news__card">
+      <div className="most__viewed__news__card__header">Most Viewed News</div>
+      <div className="most__viewed__news__card__table__header">
+        <div className="most__viewed__news__card__table__header__entry">
+          Image
+        </div>
+        <div className="most__viewed__news__card__table__header__entry">
+          Topic
+        </div>
+        <div
+          className="most__viewed__news__card__table__header__entry"
+          style={{ maxWidth: "90px" }}
+        >
+          Days
+        </div>
+        <div
+          className="most__viewed__news__card__table__header__entry"
+          style={{ maxWidth: "90px" }}
+        >
+          Views
+        </div>
+        <div className="most__viewed__news__card__table__header__entry">
+          Graph
+        </div>
+      </div>
+      <div className="most__viewed__news__card__table__content">
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+        <MostViewedNewsCardTableList />
+      </div>
+    </div>
+  );
+}
+
+function RecentlyAddedNewsCardTableList() {
+  return (
+    <div className="most__viewed__news__card__table__content__list">
+      <div className="most__viewed__news__card__table__content__list__entry">
+        <img
+          src={newsPic}
+          alt="newsPic"
+          className="most__viewed__news__card__table__content__list__entry__img"
+        />
+      </div>
+      <div className="most__viewed__news__card__table__content__list__entry">
+        سندھ میں کیسز میں اضافہ
+      </div>
+      <div className="most__viewed__news__card__table__content__list__entry">
+        <StatisticsCardChart stroke="#6F42C1" fill="rgba(111,66,193,.5)" />
+      </div>
+    </div>
+  );
+}
+
+function RecentlyAddedNewsCard() {
+  return (
+    <div className="recently__added__news__card">
+      <div className="most__viewed__news__card__header">
+        Recently Added News
+      </div>
+      <div className="most__viewed__news__card__table__header">
+        <div className="most__viewed__news__card__table__header__entry">
+          Image
+        </div>
+        <div className="most__viewed__news__card__table__header__entry">
+          Topic
+        </div>
+        <div className="most__viewed__news__card__table__header__entry">
+          Graph
+        </div>
+      </div>
+      <div className="most__viewed__news__card__table__content">
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+        <RecentlyAddedNewsCardTableList />
+      </div>
+    </div>
+  );
+}
 export default function Dashboard() {
   return (
     <div className="dashboard__container">
       <div className="dashboard__container__top">
         <StatisticsCard stroke="#6610F2" fill="rgba(111,66,193,.5)" />
-        <StatisticsCard stroke="#6610F2" fill="rgba(111,66,193,.5)" />
-        <StatisticsCard stroke="#6610F2" fill="rgba(111,66,193,.5)" />
-        <StatisticsCard stroke="#6610F2" fill="rgba(111,66,193,.5)" />
+        <StatisticsCard stroke="#0780FE" fill="rgba(111,66,193,.5)" />
+        <StatisticsCard stroke="#F10075" fill="rgba(111,66,193,.5)" />
+        <StatisticsCard stroke="#01CCCC" fill="rgba(111,66,193,.5)" />
       </div>
       <div className="dashboard__container__middle">
+        <UserByCard />
         <UserStatisticsCard />
       </div>
-      <div className="dashboard__container__bottom"></div>
+      <div className="dashboard__container__bottom">
+        <MostViewedNewsCard />
+        <RecentlyAddedNewsCard />
+      </div>
     </div>
   );
 }
