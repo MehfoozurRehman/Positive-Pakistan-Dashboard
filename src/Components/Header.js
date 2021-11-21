@@ -6,7 +6,7 @@ import userPic from "../Assets/userPic.png";
 export default function Header() {
   return (
     <div className="header">
-      <Link to="/dashbaord" className="header__logo">
+      <Link to="/dashboard" className="header__logo">
         <img src={logo} alt="logo" className="header__logo__img" />
       </Link>
       <div className="header__buttons">
