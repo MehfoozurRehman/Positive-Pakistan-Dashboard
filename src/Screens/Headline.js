@@ -76,15 +76,42 @@ export default function Headline() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/headline-edit"
+            />
           </div>
         </div>
       </div>

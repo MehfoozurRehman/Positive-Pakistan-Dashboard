@@ -80,25 +80,50 @@ export default function News() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/news-edit"
+            />
           </div>
         </div>
       </div>

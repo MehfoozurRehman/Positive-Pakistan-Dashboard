@@ -73,15 +73,42 @@ export default function SubCategory() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/sub-category-edit"
+            />
           </div>
         </div>
       </div>

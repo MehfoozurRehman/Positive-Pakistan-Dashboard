@@ -71,9 +71,12 @@ function TableInfoEntry({ title, type }) {
     );
   }
 }
-export default function TableInfoList({ tableInfoListContainer }) {
+export default function TableInfoList({ tableInfoListContainer, path }) {
   return (
-    <Link to="" className="container__content__table__content__list">
+    <Link
+      to={path ? path : ""}
+      className="container__content__table__content__list"
+    >
       {tableInfoListContainer.map((item) => (
         <TableInfoEntry
           title={item.title}

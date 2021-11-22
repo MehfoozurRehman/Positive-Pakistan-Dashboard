@@ -12,6 +12,8 @@ import AddHeadline from "./Screens/AddHeadline";
 import EditHeadline from "./Screens/EditHeadline";
 import AddCategory from "./Screens/AddCategory";
 import EditCategory from "./Screens/EditCategory";
+import AddTopic from "./Screens/AddTopic";
+import EditTopic from "./Screens/EditTopic";
 import Login from "./Screens/Login";
 import News from "./Screens/News";
 import NewsSelection from "./Screens/NewsSelection";
@@ -47,6 +49,8 @@ export default function App() {
           <Route path="news-edit" element={<EditNews />} />
           <Route path="news-selection" element={<NewsSelection />} />
           <Route path="topics" element={<Topics />} />
+          <Route path="topic-add" element={<AddTopic />} />
+          <Route path="topic-edit" element={<EditTopic />} />
           <Route path="category" element={<Category />} />
           <Route path="category-add" element={<AddCategory />} />
           <Route path="category-edit" element={<EditCategory />} />

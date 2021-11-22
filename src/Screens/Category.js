@@ -75,15 +75,42 @@ export default function Category() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/category-edit"
+            />
           </div>
         </div>
       </div>

@@ -76,27 +76,42 @@ export default function Topics() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
+            <TableInfoList
+              tableInfoListContainer={tableInfoListContainer}
+              path="/dashboard/topic-edit"
+            />
           </div>
         </div>
       </div>
