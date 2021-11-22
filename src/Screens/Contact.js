@@ -64,14 +64,7 @@ export default function Contact() {
             }
           />
         </div>
-        <div className="container__header__right">
-          <button
-            className="login__container__form__btn"
-            style={{ minWidth: "120px", marginBottom: "1em" }}
-          >
-            Add
-          </button>
-        </div>
+        <div className="container__header__right"></div>
       </div>
       <div className="container__content">
         <div className="container__content__table">

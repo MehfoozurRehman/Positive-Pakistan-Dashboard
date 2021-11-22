@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import InputBox from "../Components/InputBox";
 import TableHeaderList from "../Components/TableHeaderList";
 import TableInfoList from "../Components/TableInfoList";
 
 export default function Headline() {
+  const navigate = useNavigate();
   const options = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },
@@ -63,6 +65,9 @@ export default function Headline() {
         <div className="container__header__right">
           <InputBox options={options} variant="select" placeholder="Status" />
           <button
+            onClick={() => {
+              navigate("/dashboard/headline-add");
+            }}
             className="login__container__form__btn"
             style={{ minWidth: "120px", marginBottom: "1em" }}
           >
