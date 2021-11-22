@@ -3,7 +3,7 @@ import InputBox from "../Components/InputBox";
 import TableHeaderList from "../Components/TableHeaderList";
 import TableInfoList from "../Components/TableInfoList";
 
-export default function Headline() {
+export default function Category() {
   const options = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },

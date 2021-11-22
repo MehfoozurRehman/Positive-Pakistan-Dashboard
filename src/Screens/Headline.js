@@ -59,9 +59,9 @@ export default function Headline() {
               </svg>
             }
           />
-          <InputBox options={options} variant="select" placeholder="Status" />
         </div>
         <div className="container__header__right">
+          <InputBox options={options} variant="select" placeholder="Status" />
           <button
             className="login__container__form__btn"
             style={{ minWidth: "120px", marginBottom: "1em" }}

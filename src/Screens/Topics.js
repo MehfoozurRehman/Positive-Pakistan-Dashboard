@@ -1,5 +1,7 @@
 import React from "react";
 import InputBox from "../Components/InputBox";
+import TableHeaderList from "../Components/TableHeaderList";
+import TableInfoList from "../Components/TableInfoList";
 
 export default function Topics() {
   const options = [
@@ -7,6 +9,21 @@ export default function Topics() {
     { value: "strawberry", label: "Strawberry" },
     { value: "vanilla", label: "Vanilla" },
   ];
+  const tableHeaderEntryContainer = [
+    { title: "Title", type: "title" },
+    { title: "Auther" },
+    { title: "Status" },
+    { title: "Date" },
+    { title: "" },
+  ];
+  const tableInfoListContainer = [
+    { title: "سندھ میں کیسز میں اضافہ ندھ میں کیسز میں اضافہ", type: "title" },
+    { title: "John Doe" },
+    { title: "Published" },
+    { title: "12-3-21" },
+    { type: "btn" },
+  ];
+
   return (
     <div className="container">
       <div className="container__heading">Topics</div>
@@ -47,7 +64,7 @@ export default function Topics() {
           <InputBox options={options} variant="select" placeholder="Status" />
           <button
             className="login__container__form__btn"
-            style={{ maxWidth: "150px", marginBottom: "1em" }}
+            style={{ minWidth: "120px", marginBottom: "1em" }}
           >
             Apply
           </button>
@@ -55,32 +72,20 @@ export default function Topics() {
       </div>
       <div className="container__content">
         <div className="container__content__table">
-          <div className="container__content__table__header">
-            <div
-              className="container__content__table__header__entry"
-              style={{ minWidth: "250px" }}
-            >
-              Title
-            </div>
-            <div className="container__content__table__header__entry">
-              Author
-            </div>
-            <div className="container__content__table__header__entry">
-              Catagory
-            </div>
-            <div className="container__content__table__header__entry">
-              Sub Catagory
-            </div>
-            <div className="container__content__table__header__entry">
-              Status
-            </div>
-            <div className="container__content__table__header__entry">Date</div>
-            <div className="container__content__table__header__entry">
-              Delete
-            </div>
+          <TableHeaderList
+            tableHeaderEntryContainer={tableHeaderEntryContainer}
+          />
+          <div className="container__content__table__content">
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
           </div>
-
-          <div className="container__content__table__content"></div>
         </div>
       </div>
     </div>
