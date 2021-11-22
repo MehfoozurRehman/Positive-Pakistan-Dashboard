@@ -12,6 +12,8 @@ export default function AddSubCategory() {
       <div className="container__heading">Add Sub Category</div>
       <div className="container__form">
         <div className="container__form__left">
+          <div className="container__form__heading">Category</div>
+          <InputBox options={options} variant="select" placeholder="Select" />
           <div className="container__form__heading">Title</div>
           <InputBox placeholder="Write something...." />
           <div className="container__form__heading">Image</div>
