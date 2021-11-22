@@ -44,21 +44,6 @@ export default function Catagory() {
             }
           />
         </div>
-        <div className="container__header__right">
-          <InputBox options={options} variant="select" placeholder="Catagory" />
-          <InputBox
-            options={options}
-            variant="select"
-            placeholder="Sub-catagory"
-          />
-          <InputBox options={options} variant="select" placeholder="Status" />
-          <button
-            className="login__container__form__btn"
-            style={{ maxWidth: "150px", marginBottom: "1em" }}
-          >
-            Apply
-          </button>
-        </div>
       </div>
       <div className="container__content">
         <div className="container__content__table">

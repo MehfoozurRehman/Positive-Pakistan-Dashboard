@@ -45,12 +45,6 @@ export default function Headline() {
           />
         </div>
         <div className="container__header__right">
-          <InputBox options={options} variant="select" placeholder="Catagory" />
-          <InputBox
-            options={options}
-            variant="select"
-            placeholder="Sub-catagory"
-          />
           <InputBox options={options} variant="select" placeholder="Status" />
           <button
             className="login__container__form__btn"
