@@ -1,16 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/logo.svg";
 import userPic from "../Assets/userPic.png";
 
+function Notification() {
+  return (
+    <div className="notification__panel__content__entry">
+      <div className="notification__panel__content__entry__heading">
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div className="notification__panel__content__entry__info">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod facilis
+        quasi ratione reiciendis asperiores. Odit tempora consequatur alias
+        error facilis.
+      </div>
+    </div>
+  );
+}
+function NotificationPanel() {
+  return (
+    <div className="notification__panel">
+      <div className="notification__panel__header">
+        <div className="notification__panel__header__heading">
+          Notifications
+        </div>
+        <button className="notification__panel__header__btn">Clear All</button>
+      </div>
+      <div className="notification__panel__content">
+        <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
+      </div>
+    </div>
+  );
+}
+
 export default function Header() {
+  const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(true);
   return (
     <div className="header">
       <Link to="/dashboard" className="header__logo">
         <img src={logo} alt="logo" className="header__logo__img" />
       </Link>
       <div className="header__buttons">
-        <button className="header__buttons__icon__btn">
+        <button
+          className="header__buttons__icon__btn"
+          onClick={() => {
+            isNotificationPanelOpen
+              ? setIsNotificationPanelOpen(false)
+              : setIsNotificationPanelOpen(true);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14.376"
@@ -38,6 +83,7 @@ export default function Header() {
               />
             </g>
           </svg>
+          {isNotificationPanelOpen ? <NotificationPanel /> : null}
         </button>
         <button className="header__buttons__user__btn">
           <img src={userPic} alt="userPic" className="header__logo__img" />

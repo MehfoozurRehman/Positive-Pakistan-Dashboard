@@ -43,6 +43,7 @@ li {
   background-color: white;
   cursor: pointer;
   margin-left: 0.5em;
+  position: relative;
 }
 .header__buttons__icon__btn:hover,
 .header__buttons__user__btn:hover {
@@ -58,8 +59,78 @@ li {
   justify-content: space-between;
   height: 100vh;
 }
+
 .main__container {
   display: flex;
   padding: 0em 1em;
   height: 90vh;
+  animation: 5s main;
+}
+@keyframes main {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.notification__panel {
+  width: 400px;
+  background-color: white;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  z-index: 999;
+  padding: 1.5em 0em;
+  cursor: auto;
+}
+.notification__panel__header {
+  padding: 0em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification__panel__header__heading {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.notification__panel__header__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.notification__panel__header__btn:hover {
+  text-decoration: underline;
+}
+.notification__panel__content {
+  padding: 1.5em;
+  padding-bottom: 0em;
+  height: 400px;
+  overflow-y: auto;
+}
+.notification__panel__content__entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+}
+.notification__panel__content__entry__heading {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.notification__panel__content__entry__info {
+  font-size: 12px;
+  color: black;
+  text-align: left;
+}
+.notification__panel__content__entry:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
