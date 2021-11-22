@@ -12,17 +12,13 @@ export default function Headline() {
   const tableHeaderEntryContainer = [
     { title: "Title", type: "title" },
     { title: "Auther" },
-    { title: "Category" },
-    { title: "SubCategory" },
     { title: "Status" },
     { title: "Date" },
     { title: "" },
   ];
   const tableInfoListContainer = [
-    { title: "سندھ میں کیسز میں اضافہ", type: "title" },
+    { title: "سندھ میں کیسز میں اضافہ ندھ میں کیسز میں اضافہ", type: "title" },
     { title: "John Doe" },
-    { title: "Pakistan" },
-    { title: "Lahore" },
     { title: "Published" },
     { title: "12-3-21" },
     { type: "btn" },
@@ -63,12 +59,12 @@ export default function Headline() {
               </svg>
             }
           />
+          <InputBox options={options} variant="select" placeholder="Status" />
         </div>
         <div className="container__header__right">
-          <InputBox options={options} variant="select" placeholder="Status" />
           <button
             className="login__container__form__btn"
-            style={{ maxWidth: "150px", marginBottom: "1em" }}
+            style={{ minWidth: "120px", marginBottom: "1em" }}
           >
             Apply
           </button>
@@ -80,16 +76,6 @@ export default function Headline() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
             <TableInfoList tableInfoListContainer={tableInfoListContainer} />
             <TableInfoList tableInfoListContainer={tableInfoListContainer} />
             <TableInfoList tableInfoListContainer={tableInfoListContainer} />

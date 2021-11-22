@@ -5,7 +5,7 @@ function TableHeaderEntry({ title, type }) {
     return (
       <div
         className="container__content__table__header__entry"
-        style={{ minWidth: "247px" }}
+        style={{ minWidth: "290px" }}
       >
         {title}
       </div>

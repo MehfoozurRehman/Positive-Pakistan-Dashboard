@@ -6,7 +6,7 @@ function TableInfoEntry({ title, type }) {
     return (
       <div
         className="container__content__table__content__list__entry"
-        style={{ minWidth: "247px" }}
+        style={{ minWidth: "290px" }}
       >
         {title}
       </div>
