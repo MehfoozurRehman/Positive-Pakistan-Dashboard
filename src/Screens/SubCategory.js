@@ -2,7 +2,7 @@ import React from "react";
 import InputBox from "../Components/InputBox";
 import TableList from "../Components/TableList";
 
-export default function Catagory() {
+export default function SubCategory() {
   const options = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },
@@ -10,7 +10,7 @@ export default function Catagory() {
   ];
   return (
     <div className="container">
-      <div className="container__heading">Category</div>
+      <div className="container__heading">Sub Category</div>
       <div className="container__header">
         <div className="container__header__left">
           <InputBox

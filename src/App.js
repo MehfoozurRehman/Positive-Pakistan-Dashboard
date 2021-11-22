@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import Header from "./Components/Header";
 import Sidebar from "./Components/Sidebar";
 import Category from "./Screens/Category";
@@ -9,6 +9,7 @@ import Headline from "./Screens/Headline";
 import Login from "./Screens/Login";
 import News from "./Screens/News";
 import NewsSelection from "./Screens/NewsSelection";
+import SubCategory from "./Screens/SubCategory";
 import Topics from "./Screens/Topics";
 
 function Main() {
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="news-selection" element={<NewsSelection />} />
           <Route path="topics" element={<Topics />} />
           <Route path="category" element={<Category />} />
+          <Route path="sub-category" element={<SubCategory />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
