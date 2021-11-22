@@ -87,7 +87,6 @@ export default function Contact() {
             <TableInfoList tableInfoListContainer={tableInfoListContainer} />
             <TableInfoList tableInfoListContainer={tableInfoListContainer} />
             <TableInfoList tableInfoListContainer={tableInfoListContainer} />
-            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
           </div>
         </div>
       </div>
