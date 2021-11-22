@@ -37,8 +37,12 @@ export default function Login() {
           />
           <label htmlFor="login__container__form__checkbox">Remember Me</label>
         </div>
-
-        <button className="login__container__form__btn">Login</button>
+        <button
+          className="login__container__form__btn"
+          style={{ marginTop: "3em" }}
+        >
+          Login
+        </button>
       </form>
     </div>
   );

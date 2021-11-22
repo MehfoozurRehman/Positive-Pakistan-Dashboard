@@ -23,11 +23,11 @@
 .login__container__form__input {
   width: 100%;
   height: 40px;
+  border-radius: 50px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 0em 1em;
+  padding: 0em 1.2em;
   margin-bottom: 1em;
-  border-radius: 5px;
   font-size: 14px;
   outline: none;
 }
@@ -110,14 +110,13 @@
   }
 }
 .login__container__form__btn {
-  margin-top: 4em;
   width: 100%;
   height: 40px;
   background-color: #324ca1;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .login__container__form__btn:hover {
   background-color: darken(#324ca1, 10%);
