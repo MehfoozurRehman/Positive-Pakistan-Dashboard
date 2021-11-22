@@ -245,6 +245,10 @@ li {
   font-size: 14px;
   color: black;
 }
+.container__content__table__content__list__entry__pic {
+  width: 30px;
+  margin-left: 1em;
+}
 .container__content__table__content__list__entry__btn {
   background-color: transparent;
   border: none;
@@ -271,4 +275,31 @@ li {
   color: black;
   margin-bottom: 0.5em;
   font-weight: bold;
+}
+.container__content__table__content__list__entry__display__message {
+  position: relative;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #324ca1;
+  cursor: pointer;
+}
+.container__content__table__content__list__entry__message__detail {
+  position: absolute;
+  width: fit-content;
+  min-width: 200px;
+  height: fit-content;
+  background: #fff;
+  font-size: 14px;
+  border-radius: 10px;
+  left: -40%;
+  color: #242424;
+  display: none;
+  z-index: 999;
+  padding: 1em;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.container__content__table__content__list__entry__display__message:hover
+  .container__content__table__content__list__entry__message__detail {
+  display: flex;
+  transition: 300ms ease-in-out;
 }
