@@ -194,6 +194,65 @@ li {
 .input__box:focus-within {
   border-color: #324ca1;
 }
+.input__box__area {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  padding: 0.5em;
+  border-radius: 10px;
+  margin-right: 1em;
+  min-width: 120px;
+  border: 1px solid white;
+  width: 100%;
+  margin-bottom: 1em;
+  height: fit-content;
+}
+.input__box__area .ck .ck-sticky-panel * {
+  font-size: 12px !important;
+  background-color: transparent;
+  border: none;
+}
+.input__box__area .ck .ck-sticky-panel svg {
+  width: 15px;
+  height: 15px;
+}
+.input__box__area .ck-editor {
+  width: 100%;
+}
+.input__box__area .ck .ck-content {
+  height: 300px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.input__box__area:hover,
+.input__box__area:focus-within {
+  border-color: #324ca1;
+}
+.input__box__upload {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1em;
+}
+.input__box__upload__input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.input__box__upload__content {
+  width: 100%;
+  height: 150px;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container__header__right .input__box {
   width: 200px;
 }
@@ -266,6 +325,8 @@ li {
 .container__form__left,
 .container__form__right {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .container__form__left {
   margin-right: 2em;
@@ -302,4 +363,19 @@ li {
   .container__content__table__content__list__entry__message__detail {
   display: flex;
   transition: 300ms ease-in-out;
+}
+.container__form__panel {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.container__form__catagories {
+  display: flex;
+  flex-direction: column;
+}
+.container__form__catagories__list {
+  margin-left: 1em;
+}
+.input__box__checkbox {
+  margin-bottom: 0.5em;
 }
