@@ -1,6 +1,7 @@
 import React from "react";
 import InputBox from "../Components/InputBox";
-import TableList from "../Components/TableList";
+import TableHeaderList from "../Components/TableHeaderList";
+import TableInfoList from "../Components/TableInfoList";
 
 export default function Headline() {
   const options = [
@@ -8,6 +9,25 @@ export default function Headline() {
     { value: "strawberry", label: "Strawberry" },
     { value: "vanilla", label: "Vanilla" },
   ];
+  const tableHeaderEntryContainer = [
+    { title: "Title", type: "title" },
+    { title: "Auther" },
+    { title: "Category" },
+    { title: "SubCategory" },
+    { title: "Status" },
+    { title: "Date" },
+    { title: "" },
+  ];
+  const tableInfoListContainer = [
+    { title: "سندھ میں کیسز میں اضافہ", type: "title" },
+    { title: "John Doe" },
+    { title: "Pakistan" },
+    { title: "Lahore" },
+    { title: "Published" },
+    { title: "12-3-21" },
+    { type: "btn" },
+  ];
+
   return (
     <div className="container">
       <div className="container__heading">Headlines</div>
@@ -56,55 +76,29 @@ export default function Headline() {
       </div>
       <div className="container__content">
         <div className="container__content__table">
-          <div className="container__content__table__header">
-            <div
-              className="container__content__table__header__entry"
-              style={{ minWidth: "250px" }}
-            >
-              Title
-            </div>
-            <div className="container__content__table__header__entry">
-              Author
-            </div>
-            <div className="container__content__table__header__entry">
-              Catagory
-            </div>
-            <div className="container__content__table__header__entry">
-              Sub Catagory
-            </div>
-            <div className="container__content__table__header__entry">
-              Status
-            </div>
-            <div className="container__content__table__header__entry">Date</div>
-            <div className="container__content__table__header__entry">
-              Delete
-            </div>
-          </div>
-
+          <TableHeaderList
+            tableHeaderEntryContainer={tableHeaderEntryContainer}
+          />
           <div className="container__content__table__content">
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
           </div>
         </div>
       </div>

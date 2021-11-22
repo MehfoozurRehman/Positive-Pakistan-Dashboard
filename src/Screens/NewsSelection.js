@@ -1,6 +1,5 @@
 import React from "react";
 import InputBox from "../Components/InputBox";
-import TableList from "../Components/TableList";
 
 export default function NewSelection() {
   const options = [

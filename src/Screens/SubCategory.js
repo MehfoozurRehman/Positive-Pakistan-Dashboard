@@ -1,6 +1,5 @@
 import React from "react";
 import InputBox from "../Components/InputBox";
-import TableList from "../Components/TableList";
 
 export default function SubCategory() {
   const options = [
@@ -72,31 +71,7 @@ export default function SubCategory() {
             </div>
           </div>
 
-          <div className="container__content__table__content">
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-          </div>
+          <div className="container__content__table__content"></div>
         </div>
       </div>
     </div>

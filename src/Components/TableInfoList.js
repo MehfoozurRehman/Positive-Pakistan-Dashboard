@@ -1,29 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function TableList() {
-  return (
-    <div className="container__content__table__content__list">
+function TableInfoEntry({ title, type }) {
+  if (type === "title") {
+    return (
       <div
         className="container__content__table__content__list__entry"
         style={{ minWidth: "247px" }}
       >
-        سندھ میں کیسز میں اضافہ
+        {title}
       </div>
-      <div className="container__content__table__content__list__entry">
-        Hammad
-      </div>
-      <div className="container__content__table__content__list__entry">
-        Pakistan
-      </div>
-      <div className="container__content__table__content__list__entry">
-        Lahore
-      </div>
-      <div className="container__content__table__content__list__entry">
-        Published
-      </div>
-      <div className="container__content__table__content__list__entry">
-        12/08/2020
-      </div>
+    );
+  } else if (type === "btn") {
+    return (
       <div className="container__content__table__content__list__entry">
         <button className="container__content__table__content__list__entry__btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.252 27.308">
@@ -50,6 +39,26 @@ export default function TableList() {
           </svg>
         </button>
       </div>
-    </div>
+    );
+  } else {
+    return (
+      <div className="container__content__table__content__list__entry">
+        {title}
+      </div>
+    );
+  }
+}
+export default function TableInfoList({ tableInfoListContainer }) {
+  return (
+    <Link to="" className="container__content__table__content__list">
+      {tableInfoListContainer.map((item) => (
+        <TableInfoEntry
+          title={item.title}
+          type={
+            item.type === "title" ? "title" : item.type === "btn" ? "btn" : null
+          }
+        />
+      ))}
+    </Link>
   );
 }

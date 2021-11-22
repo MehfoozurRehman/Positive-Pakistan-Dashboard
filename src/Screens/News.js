@@ -1,6 +1,5 @@
 import React from "react";
 import InputBox from "../Components/InputBox";
-import TableList from "../Components/TableList";
 
 export default function News() {
   const options = [
@@ -87,31 +86,7 @@ export default function News() {
             </div>
           </div>
 
-          <div className="container__content__table__content">
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-            <TableList />
-          </div>
+          <div className="container__content__table__content"></div>
         </div>
       </div>
     </div>
