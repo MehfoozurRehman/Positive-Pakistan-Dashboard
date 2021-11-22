@@ -65,7 +65,7 @@ export default function Category() {
             className="login__container__form__btn"
             style={{ minWidth: "120px", marginBottom: "1em" }}
           >
-            Apply
+            Add
           </button>
         </div>
       </div>

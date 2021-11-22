@@ -70,7 +70,7 @@ export default function News() {
             className="login__container__form__btn"
             style={{ maxWidth: "150px", marginBottom: "1em" }}
           >
-            Apply
+            Add
           </button>
         </div>
       </div>
