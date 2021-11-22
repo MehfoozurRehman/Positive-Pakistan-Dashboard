@@ -146,7 +146,6 @@ li {
   align-items: center;
 }
 .container__header__right {
-  flex: 1;
   justify-content: flex-end;
 }
 .input__box {
@@ -159,7 +158,8 @@ li {
   margin-right: 1em;
   min-width: 120px;
   border: 1px solid white;
-  width: fit-content;
+  width: 100%;
+  margin-bottom: 1em;
 }
 .input__box svg {
   width: 18px;
@@ -174,6 +174,9 @@ li {
   padding-left: 1em;
   border: none;
   outline: none;
+}
+.input__box .css-b62m3t-container {
+  width: 100%;
 }
 .input__box .css-1s2u09g-control {
   border: none;
@@ -191,9 +194,11 @@ li {
 .input__box:focus-within {
   border-color: #324ca1;
 }
+.container__header__right .input__box {
+  width: 200px;
+}
 .container__content {
   flex: 1;
-  margin-top: 1em;
 }
 .container__content__table {
   display: flex;
@@ -249,4 +254,21 @@ li {
 .container__content__table__content__list__entry__btn svg {
   width: 20px;
   height: 20px;
+}
+.container__form {
+  flex: 1;
+  display: flex;
+}
+.container__form__left,
+.container__form__right {
+  flex: 1;
+}
+.container__form__left {
+  margin-right: 2em;
+}
+.container__form__heading {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 0.5em;
+  font-weight: bold;
 }

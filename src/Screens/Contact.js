@@ -54,7 +54,7 @@ export default function Contact() {
           <InputBox options={options} variant="select" placeholder="Status" />
           <button
             className="login__container__form__btn"
-            style={{ maxWidth: "150px" }}
+            style={{ maxWidth: "150px", marginBottom: "1em" }}
           >
             Apply
           </button>

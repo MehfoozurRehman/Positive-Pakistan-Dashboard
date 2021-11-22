@@ -64,7 +64,7 @@ export default function Sidebar() {
           }
         />
         <SidebarLink
-          label="Headline"
+          label="Headlines"
           path="/dashboard/headline"
           defaultChecked={false}
           svg={
