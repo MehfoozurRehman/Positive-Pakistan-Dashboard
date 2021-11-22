@@ -243,13 +243,16 @@
   height: 300px;
   overflow-y: auto;
 }
+.notification__panel__content::-webkit-scrollbar,
 .most__viewed__news__card__table__content::-webkit-scrollbar {
   width: 5px;
 }
+.notification__panel__content::-webkit-scrollbar-thumb,
 .most__viewed__news__card__table__content::-webkit-scrollbar-thumb {
   background-color: black;
   border-radius: 50px;
 }
+.notification__panel__content::-webkit-scrollbar-track,
 .most__viewed__news__card__table__content::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 50px;

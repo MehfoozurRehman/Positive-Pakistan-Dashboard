@@ -40,6 +40,8 @@
 }
 .sidebar__link__content svg {
   margin-right: 1em;
+  width: 20px;
+  height: 20px;
 }
 .sidebar__link__input:hover ~ .sidebar__link__content,
 .sidebar__link__input:checked ~ .sidebar__link__content {
