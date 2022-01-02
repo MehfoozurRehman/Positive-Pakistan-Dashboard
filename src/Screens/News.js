@@ -13,7 +13,7 @@ export default function News() {
   ];
   const tableHeaderEntryContainer = [
     { title: "Title", type: "title" },
-    { title: "Auther" },
+    { title: "Author" },
     { title: "Category" },
     { title: "SubCategory" },
     { title: "Status" },

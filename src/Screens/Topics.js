@@ -13,7 +13,7 @@ export default function Topics() {
   ];
   const tableHeaderEntryContainer = [
     { title: "Title", type: "title" },
-    { title: "Auther" },
+    { title: "Author" },
     { title: "Status" },
     { title: "Date" },
     { title: "" },
