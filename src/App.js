@@ -21,6 +21,7 @@ import SubCategory from "./Screens/SubCategory";
 import Topics from "./Screens/Topics";
 import AddSubCategory from "./Screens/AddSubCategory";
 import EditSubCategory from "./Screens/EditSubCategory";
+import EditNewsSelection from "./Screens/EditNewsSelection";
 
 function Main() {
   return (
@@ -48,6 +49,7 @@ export default function App() {
           <Route path="news-add" element={<AddNews />} />
           <Route path="news-edit" element={<EditNews />} />
           <Route path="news-selection" element={<NewsSelection />} />
+          <Route path="news-selection-edit" element={<EditNewsSelection />} />
           <Route path="topics" element={<Topics />} />
           <Route path="topic-add" element={<AddTopic />} />
           <Route path="topic-edit" element={<EditTopic />} />

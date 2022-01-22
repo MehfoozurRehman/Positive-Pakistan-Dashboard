@@ -424,3 +424,29 @@ li {
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
+.container__heading__container__btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  border: none;
+  margin-right: 1em;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #242424;
+  cursor: pointer;
+}
+.container__heading__container__btn:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 300ms ease-in-out;
+}
+.container__heading__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8em;
+}
+.container__heading__back {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
