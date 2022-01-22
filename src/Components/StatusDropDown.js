@@ -3,7 +3,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 
 export default function StatusDropDown() {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-  const [statusData, setStatusData] = useState("Published");
+  const [statusData, setStatusData] = useState("Un Published");
   return (
     <>
       <OutsideClickHandler
