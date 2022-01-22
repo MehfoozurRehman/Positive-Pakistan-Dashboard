@@ -16,7 +16,7 @@ export default function News() {
     { title: "Author" },
     { title: "Category" },
     { title: "SubCategory" },
-    { title: "Status" },
+    { title: "Status", type: "startup" },
     { title: "Date" },
     { title: "" },
   ];
@@ -25,9 +25,9 @@ export default function News() {
     { title: "John Doe" },
     { title: "Pakistan" },
     { title: "Lahore" },
-    { title: "Published" },
+    { title: "Published", type: "status" },
     { title: "12-3-21" },
-    { type: "btn" },
+    { type: "btn", path: "/dashboard/news-add" },
   ];
 
   return (
@@ -85,50 +85,13 @@ export default function News() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/news-edit"
-            />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
           </div>
         </div>
       </div>

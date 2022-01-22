@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CatagoryPic from "../Assets/CatagoryPic.png";
+import StatusDropDown from "./StatusDropDown";
 
-function TableInfoEntry({ title, type }) {
+function TableInfoEntry({ title, type, path }) {
   if (type === "title") {
     return (
       <div
@@ -24,6 +25,15 @@ function TableInfoEntry({ title, type }) {
         </div>
       </div>
     );
+  } else if (type === "status") {
+    return (
+      <div
+        style={{ minWidth: 150 }}
+        className="container__content__table__content__list__entry"
+      >
+        <StatusDropDown />
+      </div>
+    );
   } else if (type === "img") {
     return (
       <div className="container__content__table__content__list__entry">
@@ -37,6 +47,27 @@ function TableInfoEntry({ title, type }) {
   } else if (type === "btn") {
     return (
       <div className="container__content__table__content__list__entry">
+        <Link
+          to={path ? path : ""}
+          className="container__content__table__content__list__entry__btn"
+          style={{ marginRight: ".5em" }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-edit"
+          >
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+          </svg>
+        </Link>
         <button className="container__content__table__content__list__entry__btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.252 27.308">
             <g
@@ -80,6 +111,7 @@ export default function TableInfoList({ tableInfoListContainer, path }) {
       {tableInfoListContainer.map((item) => (
         <TableInfoEntry
           title={item.title}
+          path={item.path}
           type={
             item.type === "title"
               ? "title"
@@ -89,6 +121,8 @@ export default function TableInfoList({ tableInfoListContainer, path }) {
               ? "img"
               : item.type === "message"
               ? "message"
+              : item.type === "status"
+              ? "status"
               : null
           }
         />

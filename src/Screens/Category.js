@@ -14,16 +14,16 @@ export default function Category() {
   const tableHeaderEntryContainer = [
     { title: "" },
     { title: "Name" },
-    { title: "Status" },
+    { title: "Status", type: "status" },
     { title: "Sub Catagory" },
     { title: "" },
   ];
   const tableInfoListContainer = [
     { type: "img" },
     { title: "John Doe" },
-    { title: "Published" },
+    { title: "Published", type: "status" },
     { title: "21" },
-    { type: "btn" },
+    { type: "btn", path: "/dashboard/category-add" },
   ];
 
   return (
@@ -80,42 +80,14 @@ export default function Category() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/category-edit"
-            />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
           </div>
         </div>
       </div>

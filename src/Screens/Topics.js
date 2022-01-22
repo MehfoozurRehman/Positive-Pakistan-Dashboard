@@ -14,16 +14,16 @@ export default function Topics() {
   const tableHeaderEntryContainer = [
     { title: "Title", type: "title" },
     { title: "Author" },
-    { title: "Status" },
+    { title: "Status", type: "status" },
     { title: "Date" },
     { title: "" },
   ];
   const tableInfoListContainer = [
     { title: "سندھ میں کیسز میں اضافہ ندھ میں کیسز میں اضافہ", type: "title" },
     { title: "John Doe" },
-    { title: "Published" },
+    { title: "Published", type: "status" },
     { title: "12-3-21" },
-    { type: "btn" },
+    { type: "btn", path: "/dashboard/topic-add" },
   ];
 
   return (
@@ -81,42 +81,14 @@ export default function Topics() {
             tableHeaderEntryContainer={tableHeaderEntryContainer}
           />
           <div className="container__content__table__content">
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
-            <TableInfoList
-              tableInfoListContainer={tableInfoListContainer}
-              path="/dashboard/topic-edit"
-            />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
+            <TableInfoList tableInfoListContainer={tableInfoListContainer} />
           </div>
         </div>
       </div>

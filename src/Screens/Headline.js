@@ -4,6 +4,7 @@ import InputBox from "../Components/InputBox";
 import TableHeaderList from "../Components/TableHeaderList";
 import TableInfoList from "../Components/TableInfoList";
 import OutsideClickHandler from "react-outside-click-handler";
+import StatusDropDown from "../Components/StatusDropDown";
 
 export default function Headline() {
   const navigate = useNavigate();
@@ -27,54 +28,6 @@ export default function Headline() {
     { type: "btn" },
   ];
 
-  function StatusDropDown() {
-    const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-    const [statusData, setStatusData] = useState("Published");
-    return (
-      <>
-        <OutsideClickHandler
-          onOutsideClick={() => {
-            setIsDropDownOpen(false);
-          }}
-        >
-          <div className="container__content__table__content__list__entry__status__wrapper">
-            <button
-              onClick={() => {
-                isDropDownOpen === false
-                  ? setIsDropDownOpen(true)
-                  : setIsDropDownOpen(false);
-              }}
-              className="container__content__table__content__list__entry__status"
-            >
-              {statusData}
-            </button>
-            {isDropDownOpen ? (
-              <div className="container__content__table__content__list__entry__status__selection">
-                <button
-                  className="container__content__table__content__list__entry__status__selection__entry"
-                  onClick={() => {
-                    setStatusData("Published");
-                    setIsDropDownOpen(false);
-                  }}
-                >
-                  Published
-                </button>
-                <button
-                  className="container__content__table__content__list__entry__status__selection__entry"
-                  onClick={() => {
-                    setStatusData("Un Published");
-                    setIsDropDownOpen(false);
-                  }}
-                >
-                  Un Published
-                </button>
-              </div>
-            ) : null}
-          </div>
-        </OutsideClickHandler>
-      </>
-    );
-  }
   return (
     <div className="container">
       <div className="container__heading">Headlines</div>
@@ -167,8 +120,9 @@ export default function Headline() {
               </div>
               <div className="container__content__table__content__list__entry">
                 <Link
-                  to="/dashboard/headline-edit"
+                  to="/dashboard/headline-add"
                   className="container__content__table__content__list__entry__btn"
+                  style={{ marginRight: ".5em" }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -236,8 +190,9 @@ export default function Headline() {
               </div>
               <div className="container__content__table__content__list__entry">
                 <Link
-                  to="/dashboard/headline-edit"
+                  to="/dashboard/headline-add"
                   className="container__content__table__content__list__entry__btn"
+                  style={{ marginRight: ".5em" }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -305,8 +260,9 @@ export default function Headline() {
               </div>
               <div className="container__content__table__content__list__entry">
                 <Link
-                  to="/dashboard/headline-edit"
+                  to="/dashboard/headline-add"
                   className="container__content__table__content__list__entry__btn"
+                  style={{ marginRight: ".5em" }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -374,8 +330,9 @@ export default function Headline() {
               </div>
               <div className="container__content__table__content__list__entry">
                 <Link
-                  to="/dashboard/headline-edit"
+                  to="/dashboard/headline-add"
                   className="container__content__table__content__list__entry__btn"
+                  style={{ marginRight: ".5em" }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -443,8 +400,9 @@ export default function Headline() {
               </div>
               <div className="container__content__table__content__list__entry">
                 <Link
-                  to="/dashboard/headline-edit"
+                  to="/dashboard/headline-add"
                   className="container__content__table__content__list__entry__btn"
+                  style={{ marginRight: ".5em" }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -512,8 +470,9 @@ export default function Headline() {
               </div>
               <div className="container__content__table__content__list__entry">
                 <Link
-                  to="/dashboard/headline-edit"
+                  to="/dashboard/headline-add"
                   className="container__content__table__content__list__entry__btn"
+                  style={{ marginRight: ".5em" }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -581,8 +540,9 @@ export default function Headline() {
               </div>
               <div className="container__content__table__content__list__entry">
                 <Link
-                  to="/dashboard/headline-edit"
+                  to="/dashboard/headline-add"
                   className="container__content__table__content__list__entry__btn"
+                  style={{ marginRight: ".5em" }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
