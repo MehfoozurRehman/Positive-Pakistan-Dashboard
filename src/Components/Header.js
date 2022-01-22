@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/logo.svg";
 import userPic from "../Assets/userPic.png";
+import OutsideClickHandler from "react-outside-click-handler";
 
 function Notification() {
   return (
@@ -83,7 +84,13 @@ export default function Header() {
               />
             </g>
           </svg>
-          {isNotificationPanelOpen ? <NotificationPanel /> : null}
+          <OutsideClickHandler
+            onOutsideClick={() => {
+              setIsNotificationPanelOpen(false);
+            }}
+          >
+            {isNotificationPanelOpen ? <NotificationPanel /> : null}
+          </OutsideClickHandler>
         </button>
         <button className="header__buttons__user__btn">
           <img src={userPic} alt="userPic" className="header__logo__img" />

@@ -11,6 +11,7 @@ export default function InputBox({
   variant,
   options,
   style,
+  isMulti,
 }) {
   if (variant === "select") {
     return (
@@ -20,6 +21,7 @@ export default function InputBox({
           options={options}
           placeholder={placeholder}
           required={required}
+          isMulti={isMulti}
         />
       </div>
     );

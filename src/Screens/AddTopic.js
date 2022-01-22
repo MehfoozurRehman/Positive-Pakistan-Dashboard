@@ -40,6 +40,20 @@ export default function AddTopic() {
         <div className="container__form__left">
           <div className="container__form__heading">Title</div>
           <InputBox placeholder="Write something...." />
+          <div className="container__form__heading">Category</div>
+          <InputBox
+            variant="select"
+            isMulti="true"
+            options={options}
+            placeholder="Category"
+          />
+          <div className="container__form__heading">Sub Category</div>
+          <InputBox
+            variant="select"
+            isMulti="true"
+            options={options}
+            placeholder="Sub Category"
+          />
           <div className="container__form__heading">Content</div>
           <InputBox
             options={options}
