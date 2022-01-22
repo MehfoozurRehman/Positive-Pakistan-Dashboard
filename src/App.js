@@ -22,6 +22,7 @@ import Topics from "./Screens/Topics";
 import AddSubCategory from "./Screens/AddSubCategory";
 import EditSubCategory from "./Screens/EditSubCategory";
 import EditNewsSelection from "./Screens/EditNewsSelection";
+import Profile from "./Screens/Profile";
 
 function Main() {
   return (
@@ -60,6 +61,7 @@ export default function App() {
           <Route path="sub-category-add" element={<AddSubCategory />} />
           <Route path="sub-category-edit" element={<EditSubCategory />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
       </Routes>
     </div>

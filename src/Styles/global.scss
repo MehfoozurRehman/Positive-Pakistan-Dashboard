@@ -462,3 +462,33 @@ li {
   color: black;
   font-weight: bold;
 }
+.side__bar__content__form__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.side__bar__content__form__input__file {
+  position: absolute;
+  top: 240px;
+  left: 55%;
+  cursor: pointer;
+  height: 40px;
+  opacity: 0;
+  z-index: 999;
+}
+.side__bar__content__form__input__overlay {
+  position: relative;
+  top: 170px;
+  left: 70px;
+  color: rgb(255, 255, 255);
+  background: #324ca1;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  cursor: pointer;
+}

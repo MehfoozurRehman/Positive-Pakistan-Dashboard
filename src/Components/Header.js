@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../Assets/logo.svg";
 import userPic from "../Assets/userPic.png";
 import OutsideClickHandler from "react-outside-click-handler";
@@ -43,6 +43,7 @@ function NotificationPanel() {
 
 export default function Header() {
   const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className="header">
       <Link to="/dashboard" className="header__logo">
@@ -92,7 +93,12 @@ export default function Header() {
             {isNotificationPanelOpen ? <NotificationPanel /> : null}
           </OutsideClickHandler>
         </button>
-        <button className="header__buttons__user__btn">
+        <button
+          onClick={() => {
+            navigate("/dashboard/profile");
+          }}
+          className="header__buttons__user__btn"
+        >
           <img src={userPic} alt="userPic" className="header__logo__img" />
         </button>
       </div>
