@@ -21,11 +21,32 @@ function SidebarLink({ label, defaultChecked, path, svg }) {
     </div>
   );
 }
+function SidebarLinkDashboard({ label, defaultChecked, path, svg }) {
+  const navigate = useNavigate();
+  return (
+    <div className="sidebar__link">
+      <input
+        type="radio"
+        name="sidebar__link__input"
+        className="sidebar__link__input__1"
+        defaultChecked={defaultChecked}
+        onChange={() => {
+          navigate(path);
+        }}
+      />
+      <div className="sidebar__link__content">
+        {svg}
+        {label}
+      </div>
+    </div>
+  );
+}
+
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__links">
-        <SidebarLink
+        <SidebarLinkDashboard
           label="Dashboard"
           path="/dashboard"
           defaultChecked={true}

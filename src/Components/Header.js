@@ -46,7 +46,13 @@ export default function Header() {
   const navigate = useNavigate();
   return (
     <div className="header">
-      <Link to="/dashboard" className="header__logo">
+      <Link
+        to="/dashboard"
+        onClick={() => {
+          document.getElementById("sidebar__link__1").checked = true;
+        }}
+        className="header__logo"
+      >
         <img src={logo} alt="logo" className="header__logo__img" />
       </Link>
       <div className="header__buttons">
